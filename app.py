@@ -43,7 +43,7 @@ Once you upload a CSV file containing canonical SMILES, the app will calculate t
 #Sidebar
 with st.sidebar.header('Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your file",type=['txt'])
-    st.sidebar.markdown("""[Example input file](https://github.com/khanhcodes/bioact-prediction/blob/main/example_acetylcholinesterase.txt)""")
+    st.sidebar.markdown("""[Example input file](https://raw.githubusercontent.com/khanhcodes/bioact-prediction/main/example_acetylcholinesterase.txt)""")
 
 if st.sidebar.button('Predict bioactivity data'):
     load_data = pd.read_table(uploaded_file, sep=' ', header=None)
