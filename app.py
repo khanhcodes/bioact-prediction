@@ -73,6 +73,6 @@ if st.sidebar.button('Predict bioactivity data'):
     # Apply trained model to make prediction on query compounds
     build_model(subset)
 else:
-    st.info('Upload input data in the sidebar to start predicting bioactivity!')
+    st.info('Upload input data in the sidebar to start predicting!')
 
 
